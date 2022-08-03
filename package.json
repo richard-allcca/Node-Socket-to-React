@@ -1,0 +1,25 @@
+{
+  "name": "node-socket-chat",
+  "version": "1.0.0",
+  "description": "chat con socket",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js",
+    "build": "npm run --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "richard_allcca_llano@hotmail.com"
+  },
+  "author": "Richard Allcca Llano",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "morgan": "^1.10.0",
+    "socket.io": "^4.5.1"
+  }
+}
