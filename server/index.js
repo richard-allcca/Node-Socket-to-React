@@ -27,6 +27,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 app.use(cors());
 app.use(morgan("dev"));
+app.use(express.urlencoded({ extended: false }));
 app.use(express.static(join(__dirname, "../client/build")));
 
 // ==========================================================
@@ -41,7 +42,7 @@ io.on('connection',(socket)=>{
     // Reenvia msj a todos los clientes
     socket.broadcast.emit('receiveMessage',{
       body:message,
-      from:socket.id,
+      from: socket.id.slice(8),
     })
   })
 })
