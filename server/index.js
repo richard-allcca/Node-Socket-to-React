@@ -11,16 +11,23 @@ import { PORT } from './config.js';
 
 // ==========================================================
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
-// console.log(__dirname);
 const app = express();
 const server = http.createServer(app);
 const io = new SocketServer(server,{
-  cors:{
-    origin:'http://localhost:3000',
-  }
+  // cors:{
+  //   origin:'http://localhost:3000',
+  // }
 });
 
+const __dirname = dirname(fileURLToPath(import.meta.url));
+// console.log(__dirname);
+
+
+// ==========================================================
+
+app.use(cors());
+app.use(morgan("dev"));
+app.use(express.static(join(__dirname, "../client/build")));
 
 // ==========================================================
 
@@ -38,12 +45,6 @@ io.on('connection',(socket)=>{
     })
   })
 })
-
-// ==========================================================
-
-app.use(cors());
-app.use(morgan("dev"));
-app.use(express.static(join(__dirname, "../client/build" )));
 
 // ==========================================================
 

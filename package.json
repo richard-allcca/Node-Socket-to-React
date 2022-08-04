@@ -1,16 +1,12 @@
 {
   "name": "node-socket-chat",
   "version": "1.0.0",
-  "engines": {
-    "node": "16.16.0"
-  },
   "description": "chat con socket",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/index.js",
-    "dev": "nodemon server/index.js",
+    "dev": "nodemon server/index.js --ignore client",
     "build": "npm --prefix client install && npm run --prefix client build"
   },
   "repository": {
