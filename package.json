@@ -2,7 +2,7 @@
   "name": "node-socket-chat",
   "version": "1.0.0",
   "engines": {
-    "node": "18.4.0"
+    "node": "16.16.0"
   },
   "description": "chat con socket",
   "main": "index.js",
