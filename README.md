@@ -16,7 +16,11 @@
 
 ## Notas
 
-- config pendiente de prueba:     "build": "npm --prefix client install && npm run --prefix client build"
+- script para hacer build del cliente en heroku:
+
+      "build": "npm --prefix client install && npm run --prefix client build"
+
+- `mongan` - muestra en consola las peticiones que hace el servidor con detalles de esta
 
 ## Vista Previa y Enlace en linea
 
