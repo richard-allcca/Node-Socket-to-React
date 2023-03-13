@@ -4,6 +4,7 @@
 
 ## Descripción
 
+- Código del servidor para conectar con build React
 - Chat Básico pero base suficiente para escalar (tu imaginación es el limite)
 
 ## Tecnologías
