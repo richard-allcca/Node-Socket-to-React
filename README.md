@@ -2,6 +2,8 @@
 
   Hola 🙋‍♂️ I am Richard.
 
+Para correr en local, cambia en App.jsx la instancia de `io()`, Tabien dentro de server en el index.js cambiar el cors origin a local
+
 ## Descripción
 
 - Código del servidor para conectar con build React
@@ -25,6 +27,6 @@
 
 ## Vista Previa y Enlace en linea
 
-[Vista Previa](https://cool-chat-87a5e9.netlify.app/)
+[Vista Previa](https://cool-chat-87a5e9.netlify.app/) - heroku esta fallando
 
 ![Pagina Principal](./assets/chat-node-react.jpeg)
